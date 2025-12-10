@@ -18,4 +18,6 @@ const calculateSumAndProduct = (numbers) => {
     return "La suma de los numeros es:" + "CH" + sum + " y " + "El producto de los numeros es: " + product;
 }; 
 
-console.log (calculateSumAndProduct(numbers));
+//console.log (calculateSumAndProduct(numbers));
+
+export { calculateSumAndProduct };

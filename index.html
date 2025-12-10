@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
-<body>
-    
 
-    
+<body>
+    <h1>Ejercicios JavaScript: Arreglos y Ciclos</h1>
+    <p>Haz clic en las tarjetas para ver los resultados.</p>
+
+    <div class="boxesContainer">
+        
+    <div class="cardBox" id="mycard">
+        <div class="card-inner" id="cardInner1">
+            <div class="card-front">
+                <!-- Contenido de la cara frontal (imagen, texto) -->
+                <h2>Ejercicio 1</h2>
+                <button onclick="flipCard(event, 'cardInner1')">Girar</button>
+            </div>
+            <div class="card-back">
+                <!-- Contenido de la cara trasera (descripción, botón) -->
+                <h2>El resultado es:</h2>
+                <p>Información adicional aquí.</p>
+                <button onclick="flipCard(event, 'cardInner1')">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardBox" id="mycard">
+        <div class="card-inner" id="cardInner2">
+            <div class="card-front">
+                <!-- Contenido de la cara frontal (imagen, texto) -->
+                <h2>Ejercicio 2</h2>
+                <p>Ingresa los numeros separados por coma para duplicar cada uno.</p>
+                 <input type="text" id="inputNum2" placeholder="Ej: 1, 2, 3">
+                    <button onclick="executeExercise(event, 'cardInner2', 'duplicate')">Ejecutar</button>
+                <button onclick="flipCard(event, 'cardInner2')">Girar</button>
+            </div>
+            <div class="card-back">
+                <!-- Contenido de la cara trasera (descripción, botón) -->
+                <h2>El resultado es: </h2>
+                <p>Información adicional aquí.</p>
+                <button onclick="flipCard(event, 'cardInner2')">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardBox" id="mycard">
+        <div class="card-inner" id="cardInner3">
+            <div class="card-front">
+                <!-- Contenido de la cara frontal (imagen, texto) -->
+                <h2>Ejercicio 3</h2>
+                <p>Ingresa numeros separados por coma para que pueda calcular la suma y el producto.</p>
+                <input type="text" id="inputNum3" placeholder="Ej: 1, 2, 3">
+                    <button onclick="executeExercise(event, 'cardInner3', 'sumProduct')">Ejecutar</button>
+                <button onclick="flipCard(event, 'cardInner3')">Girar</button>
+            </div>
+            <div class="card-back">
+                <!-- Contenido de la cara trasera (descripción, botón) -->
+                <h2>El resultado es: </h2>
+                <p>Información adicional aquí.</p>
+                <button onclick="flipCard(event, 'cardInner3')">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardBox" id="mycard">
+        <div class="card-inner" id="cardInner4">
+            <div class="card-front">
+                <!-- Contenido de la cara frontal (imagen, texto) -->
+                <h2>Ejercicio 4</h2>
+                <button onclick="flipCard(event, 'cardInner4')">Girar</button>
+            </div>
+            <div class="card-back">
+                <!-- Contenido de la cara trasera (descripción, botón) -->
+                <h2>El resultado es:</h2>
+                <p>Información adicional aquí.</p>
+                <button onclick="flipCard(event, 'cardInner4')">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardBox" id="mycard">
+        <div class="card-inner" id="cardInner5">
+            <div class="card-front">
+                <!-- Contenido de la cara frontal (imagen, texto) -->
+                <h2>Ejercicio 5</h2>
+                <button onclick="flipCard(event, 'cardInner5')">Girar</button>
+            </div>
+            <div class="card-back">
+                <!-- Contenido de la cara trasera (descripción, botón) -->
+                <h2>El resultado es:</h2>
+                <p>Información adicional aquí.</p>
+                <button onclick="flipCard(event, 'cardInner5')">Volver</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardBox" id="mycard">
+        <div class="card-inner" id="cardInner6">
+            <div class="card-front">
+                <!-- Contenido de la cara frontal (imagen, texto) -->
+                <h2>Ejercicio 6</h2>
+                <p>Ingresa numeros desordenados (separados por coma) para ordenarlos.</p>
+                <input type="text" id="inputNum6" placeholder="Ej: 3, 1, 2">
+                    <button onclick="executeExercise(event, 'cardInner6', 'sort')">Ejecutar</button>
+                <button onclick="flipCard(event, 'cardInner6')">Girar</button>
+            </div>
+            <div class="card-back">
+                <!-- Contenido de la cara trasera (descripción, botón) -->
+                <h2>El resultado es: </h2>
+                <p>Información adicional aquí.</p>
+                <button onclick="flipCard(event, 'cardInner6')">Volver</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

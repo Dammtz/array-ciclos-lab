@@ -7,4 +7,6 @@ const duplicateValues = (numbers) => {
     return numbers.map(num => num * 2);
 }; 
 
-console.log (duplicateValues(numbers));
+//console.log (duplicateValues(numbers));
+
+export { duplicateValues };

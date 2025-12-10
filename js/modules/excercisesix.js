@@ -15,6 +15,5 @@ const bubbleSort = (number) => {
     return number;
 };
 
-console.log(bubbleSort(number));
-
-//SALIDA esperada [1, 3, 5, 6, 12, 100]
+//console.log(bubbleSort(number));
+ export { bubbleSort };

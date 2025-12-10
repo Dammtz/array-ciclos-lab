@@ -1,0 +1,126 @@
+.cardBox {
+  float:left;  /*Mantiene las tarjetas alineadas horizontalmente*/
+  margin:1% 0 0 1%;
+  perspective: 800px; /*Ajusta el punto de vista desde donde se ve un elemento*/
+  transition: all 0.3s ease 0s; /*Suavizar ek giro de tarjetas*/
+  width: 23%.7%;
+}
+
+
+/* Clase que activa JavaScript */
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-inner {
+  background: #222;
+  cursor:default;
+  width: 100%; /* Ancho y alto al 100% del contenedor padre */
+  height: 300px;
+  animation: giro 1s 1; 
+  -webkit-animation: giro 1s 1;
+  transition: transform 0.4s ease 0s; /* Define la duración de la animación */
+  transform-style: preserve-3d; 
+  position: relative;
+  text-align: center;/* Asegura que los elementos hijos se posicionen en un espacio 3D */
+}
+
+.cardBox:nth-child(2) .card-inner{
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+ 
+.cardBox:nth-child(3) .card-inner {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+ 
+.cardBox:nth-child(4) .card-inner {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+
+.card-front, .card-back {
+  /* Oculta la parte trasera de las caras hasta que se giran */
+  backface-visibility: hidden; 
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.card-back {
+  background-color: #2980b9;
+  color: white;
+  /* Inicialmente gira la cara trasera 180 grados para que no sea visible al inicio */
+  transform: rotateY(180deg);
+}
+
+.card-front input, .card-front button {
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#output2, #output3, #output6 {
+    /* Asegura que el texto largo no desborde la tarjeta */
+    word-wrap: break-word; 
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+
+  .card {
+    height: 285px;
+  }
+
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .cardBox {
+    width: 94.5%;
+    height: 290px;
+  }
+
+}

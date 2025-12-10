@@ -5,4 +5,6 @@ function printOutString () {
     return arr.join(" ");
 }
 
-console.log (printOutString());
+// console.log (printOutString());
+
+export { printOutString };
